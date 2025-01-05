@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        #button_id{
+            color: rgb(3, 3, 3);
+            background-color: bisque;
+            margin-left: 12px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(18, 18, 18); 
+    background-color: bisque; margin: 10px;
+    text-align: center;
+    border-radius: 10px;"
+    >CREATING FORM FILLING</h1>
+    <div style="display: flex;">
+        <form id="user_details" method="get">
+            <label for="firstname">First Name :</label>
+            <input type="text" name="uname" id="uname">
+            <label for="Last Name">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+        </form>
+        <button type="button" form="user_details" value="Submit" id="button_id">Submit</button>
+    
+    </div>
+
+</body>
+</html>
