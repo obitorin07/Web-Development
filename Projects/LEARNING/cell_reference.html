@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Cell References</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #007BFF;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .example {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Cell References in Excel</h1>
+    <p>A <strong>cell reference</strong> in Excel refers to the way you identify a cell or a range of cells in a worksheet. It's like the address of the cell. For example, <strong>A1</strong> refers to the cell in column A and row 1.</p>
+
+    <h2>Types of Cell References</h2>
+    <h3>1. Relative Cell Reference</h3>
+    <ul>
+        <li><strong>Example:</strong> <span class="example">A1</span></li>
+        <li>The reference changes when you copy the formula to another cell.</li>
+        <li>Example: Copying <span class="example">=A1+1</span> from cell B1 to cell C1 becomes <span class="example">=B1+1</span>.</li>
+    </ul>
+
+    <h3>2. Absolute Cell Reference</h3>
+    <ul>
+        <li><strong>Example:</strong> <span class="example">$A$1</span></li>
+        <li>The reference does not change when copied to another cell.</li>
+        <li><strong>Note:</strong> Dollar signs (<span class="example">$</span>) lock both the <em>column</em> and <em>row</em>.</li>
+    </ul>
+
+    <h3>3. Mixed Cell Reference</h3>
+    <ul>
+        <li><strong>Examples:</strong> <span class="example">$A1</span> or <span class="example">A$1</span></li>
+        <li>Only one of the column or row is locked:</li>
+        <ul>
+            <li><span class="example">$A1</span>: Column A is locked, but the row changes when copied.</li>
+            <li><span class="example">A$1</span>: Row 1 is locked, but the column changes when copied.</li>
+        </ul>
+    </ul>
+
+    <h2>Column Lock vs. Row Lock</h2>
+    <ul>
+        <li><strong>Column Lock:</strong> Dollar sign (<span class="example">$</span>) before the column letter (e.g., <span class="example">$A1</span>).</li>
+        <li><strong>Row Lock:</strong> Dollar sign (<span class="example">$</span>) before the row number (e.g., <span class="example">A$1</span>).</li>
+    </ul>
+
+    <h2>Example Formula</h2>
+    <p>Formula: <span class="example">=$A$1+B$2</span></p>
+    <ul>
+        <li><span class="example">$A$1</span>: Column and row both locked (absolute).</li>
+        <li><span class="example">B$2</span>: Row locked, column flexible (mixed).</li>
+    </ul>
+
+    <footer>
+        <p>Written for future reference. Practice Excel formulas regularly to build confidence!</p>
+    </footer>
+</body>
+</html>
