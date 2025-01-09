@@ -12,4 +12,4 @@ myInterest2 = {'Langauge':[
 } 
 
 console.log(myInterest2.Tools_Technology);
-console.log(myInterest2.Tools_Technology[0]) ;
+console.log(myInterest2.Tools_Technology[0])
